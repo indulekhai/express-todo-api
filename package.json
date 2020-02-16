@@ -1,12 +1,13 @@
 {
-  "name": "express-todo",
+  "name": "express-todo-api",
   "version": "1.0.0",
   "description": "A simple multi user todo list api service",
   "main": "index.js",
   "scripts": {
     "devstart": "nodemon index.js",
     "lint": "eslint ./",
-    "lint-fix": "eslint ./ --fix"
+    "lint-fix": "eslint ./ --fix",
+    "start" : "node index.js"
   },
   "keywords": [],
   "author": "Afnan Navaz",
