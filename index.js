@@ -15,7 +15,7 @@ mongoose.connect(process.env.MONGO_URL, {useNewUrlParser: true, useUnifiedTopolo
       console.log('connected to mongodb');
     })
     .catch((err) => {
-      err;
+      console.log(err);
     });
 
 app.set('views', path.join(__dirname, 'views'));
@@ -27,7 +27,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/api/user', user);
 app.use('/api/todo', todo);
 
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log(`server up in port ${port}`);
 });
