@@ -1,6 +1,6 @@
 # express-todo-api
 
-A simple RESTful api for a multi-user TODO list.
+ RESTful api for a multi-user TODO list.
 
 # how to run
 
